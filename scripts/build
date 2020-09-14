@@ -1,0 +1,10 @@
+#!/bin/bash
+
+NAME="${PWD##*/}"
+
+echo Building and running...
+mkdir -p out/
+go build -o out/$NAME
+wait
+./out/$NAME
+wait
